@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pinguino Control</string>
+    <string name="found_pinguinos">Available Wi-Fi Pinguinos</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="netsettings">Net Settings</string>
+    <string name="targetIP">Target IP Address</string>
+    <string name="port">Port</string>
+    <string name="ipAdrs">IP Address</string>
+    <string name="connect">Connect\u2026</string>
+    <string name="portNumber">Type Port Number</string>
+    <string name="title_activity_connect">Connect</string>
+    <string name="pin">PIN</string>
+    <string name="analogInputs">Analogue Inputs</string>
+    <string name="analoguePort">Analogue Port</string>
+    <string name="digitalPort">Digital Port</string>
+    <string name="digitalOutputs">Digital Ouputs</string>
+    <string name="on">On</string>
+    <string name="exit">Exit</string>
+    <string name="Splash">Splash</string>
+    <string name="off">Off</string>
+    <string name="about">About</string>
+    <string name="contact">Contact</string>
+    <string name="instructions">Instructions</string>
+    <string name="title_section1">ANALOGUE INPUTS</string>
+    <string name="title_section2">ANALOGUE PORT</string>
+    <string name="title_section3">DIGITAL PORT-1</string>
+    <string name="title_section4">DIGITAL PORT-2</string>
+    <string name="title_section5">ANALOGUE OUTPUTS</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="inputOutput">Input/Output</string>
+    <string name="d0">D0</string>
+    <string name="d2">D2</string>
+    <string name="d3">D3</string>
+    <string name="d4">D4</string>
+    <string name="d5">D5</string>
+    <string name="d6">D6</string>
+    <string name="d7">D7</string>
+    <string name="d8">D8</string>
+    <string name="d9">D9</string>
+    <string name="d10">D10</string>
+    <string name="d11">D11</string>
+    <string name="d12">D12</string>
+    <string name="d13">D13(LED1)</string>
+    <string name="dled">LED 2</string>
+    <string name="a0">A0</string>
+    <string name="a1">A1</string>
+    <string name="a2">A2</string>
+    <string name="a3">A3</string>
+    <string name="a4">A4</string>
+    <string name="a5">A5</string>
+    <string name="a6">A6</string>
+    <string name="a7">A7</string>
+    <string name="input">Input</string>
+    <string name="output">Output</string>
+    <string name="nulo">" "</string>
+    <string name="high_low">High Low</string>
+    <string name="d1">D1</string>
+    <string name="highlow">High/Low</string>
+    <string name="i_o">I   /   O</string>
+    <string name="inter">Interface</string>
+    <string name="pin1">Pin</string>
+    <string name="pwm1">D0 / PWM 1</string>
+    <string name="pwm2">D1 / PWM 2</string>
+    <string name="pwm3">D2 / PWM 3</string>
+    <string name="image_splash">PINGUINO PIC32 OTG</string>
+    <string name="zero">0</string>
+    <string name="onoff">On/Off</string>
+    <string name="anValue">Analogue Value</string>
+    <string name="value">Value</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="usb">USB</string>
+    <string name="wifi">WiFi</string>
+    <string name="textInstructions">This Android application has been developed to control a Pinguino PIC32 OTG board. \n\n
+        
+There are two ways of doing this: by using a Local WiFi network, directly communicating to a Pinguino Board  with WiFi capabilities (i.e. using MOD-WIFI), or by connecting via WiFi to a computer running a
+Pure Data or Max MSP patch that in turn connects via CDC USB to the Pinguino, resending the control messages from the Android device to Pinguino. \n\n
+
+When working in the Wifi mode, the Application uses UDP Packets to communicate control with Pinguino. It uses port 10101 to receive packets and 10111 to send them. The Pinguino board, if configured
+with the matching firmware, willl broadcast its IP address and name for the Application to use. \n\n
+
+On its USB mode, this App sends UDP packets to a Pure Data patch that resends them to Pinguino using CDC USB. All devices must be within the same wireless LAN (wifi)\n\n
+
+Download the Pure Data/Max MSP patches from http://iobridger.wordpress.com\n\n
+
+Pinguino must be programmed with the code found in the same website, just look for it, or find ‘Interface for Pinguino and Pure Data’ in the previous link. This is needed to recognize the formatted messages sent to the microcontroller. \n\n
+
+After Pinguino has been programmed, connect to the computer with the USB cable. You might need a driver like the CDC RS-232 EMULATION. Follow the previous link. \n\n
+
+Open the communication between Pure Data and Pinguino on the adequate port, from the patch. \n\n
+
+From this Application type in the IP address of the computer that is connected to Pinguino.  Also type in the Port number you desire, the default port in the Application and in Pure Data is 10001, you can change this at will. \n\n
+
+For more information visit http://iobridger.wordpress.com</string>
+    <string name="textContact">Pinguino Control \n\n
+        v. 2.0\n\n\n\n
+        Developed by: \n\n
+        Roberto Becerra\n\n
+        io_robertob@hotmail.com\n\n
+        http://iobridger.wordpress.com\n\n
+        April, 2014.</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_connection_select">ConnectionSelect</string>
+    <string name="title_activity_available_pinguinos">AvailablePinguinos</string>
+    <string name="title_activity_wi_fi_connected">WiFiConnected</string>
+
+</resources>

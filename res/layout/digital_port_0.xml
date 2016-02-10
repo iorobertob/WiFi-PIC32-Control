@@ -1,0 +1,552 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/io.pinguinocontrol"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:paddingTop="20dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_Pin_DP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/pin"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_IO_DP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="@string/i_o"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <io.pinguinocontrol.TypefacedTextView
+                    android:id="@+id/text_HL_DP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/highlow"
+                    android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="@color/white"
+                custom:typeface="roboto" /> 
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="11dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_D0_AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/d0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <ToggleButton
+                android:id="@+id/toggle_D0_IO_DP"
+                style="@drawable/android_toggle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/android_toggle_bg"
+                android:onClick="ioD0"
+                android:text="@string/nulo"
+                android:textOff="@string/nulo"
+                android:textOn="@string/nulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ToggleButton
+                    android:id="@+id/toggle_D0_S_DP"
+                    style="@drawable/android_toggle_onoff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/android_toggle_onoff_bg"
+                    android:onClick="sD0"
+                    android:text="@string/nulo"
+                    android:textOff="@string/nulo"
+                    android:textOn="@string/nulo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_D1_AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/d1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <ToggleButton
+                android:id="@+id/toggle_D1_IO_DP"
+                style="@drawable/android_toggle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/android_toggle_bg"
+                android:onClick="ioD1"
+                android:text="@string/nulo"
+                android:textOff="@string/nulo"
+                android:textOn="@string/nulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ToggleButton
+                    android:id="@+id/toggle_D1_S_DP"
+                    style="@drawable/android_toggle_onoff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/android_toggle_onoff_bg"
+                    android:onClick="sD1"
+                    android:text="@string/nulo"
+                    android:textOff="@string/nulo"
+                    android:textOn="@string/nulo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_D2_AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/d2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <ToggleButton
+                android:id="@+id/toggle_D2_IO_DP"
+                style="@drawable/android_toggle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/android_toggle_bg"
+                android:onClick="ioD2"
+                android:text="@string/nulo"
+                android:textOff="@string/nulo"
+                android:textOn="@string/nulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ToggleButton
+                    android:id="@+id/toggle_D2_S_DP"
+                    style="@drawable/android_toggle_onoff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/android_toggle_onoff_bg"
+                    android:onClick="sD2"
+                    android:text="@string/nulo"
+                    android:textOff="@string/nulo"
+                    android:textOn="@string/nulo"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_D3_AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/d3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <ToggleButton
+                android:id="@+id/toggle_D3_IO_DP"
+                style="@drawable/android_toggle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/android_toggle_bg"
+                android:onClick="ioD3"
+                android:text="@string/nulo"
+                android:textOff="@string/nulo"
+                android:textOn="@string/nulo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ToggleButton
+                    android:id="@+id/toggle_D3_S_DP"
+                    style="@drawable/android_toggle_onoff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/android_toggle_onoff_bg"
+                    android:onClick="sD3"
+                    android:text="@string/nulo"
+                    android:textOff="@string/nulo"
+                    android:textOn="@string/nulo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_D4_AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/d4"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <ToggleButton
+                android:id="@+id/toggle_D4_IO_DP"
+                style="@drawable/android_toggle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/android_toggle_bg"
+                android:onClick="ioD4"
+                android:text="@string/nulo"
+                android:textOff="@string/nulo"
+                android:textOn="@string/nulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ToggleButton
+                    android:id="@+id/toggle_D4_S_DP"
+                    style="@drawable/android_toggle_onoff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/android_toggle_onoff_bg"
+                    android:onClick="sD4"
+                    android:text="@string/nulo"
+                    android:textOff="@string/nulo"
+                    android:textOn="@string/nulo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_D5_AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/d5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <ToggleButton
+                android:id="@+id/toggle_D5_IO_DP"
+                style="@drawable/android_toggle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/android_toggle_bg"
+                android:onClick="ioD5"
+                android:text="@string/nulo"
+                android:textOff="@string/nulo"
+                android:textOn="@string/nulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ToggleButton
+                    android:id="@+id/toggle_D5_S_DP"
+                    style="@drawable/android_toggle_onoff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/android_toggle_onoff_bg"
+                    android:onClick="sD5"
+                    android:text="@string/nulo"
+                    android:textOff="@string/nulo"
+                    android:textOn="@string/nulo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_D6_AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/d6"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <ToggleButton
+                android:id="@+id/toggle_D6_IO_DP"
+                style="@drawable/android_toggle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/android_toggle_bg"
+                android:onClick="ioD6"
+                android:text="@string/nulo"
+                android:textOff="@string/nulo"
+                android:textOn="@string/nulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ToggleButton
+                    android:id="@+id/toggle_D6_S_DP"
+                    style="@drawable/android_toggle_onoff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/android_toggle_onoff_bg"
+                    android:onClick="sD6"
+                    android:text="@string/nulo"
+                    android:textOff="@string/nulo"
+                    android:textOn="@string/nulo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <io.pinguinocontrol.TypefacedTextView
+                android:id="@+id/text_D7_AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/d7"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                custom:typeface="roboto" />
+
+            <ToggleButton
+                android:id="@+id/toggle_D7_IO_DP"
+                style="@drawable/android_toggle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/android_toggle_bg"
+                android:onClick="ioD7"
+                android:text="@string/nulo"
+                android:textOff="@string/nulo"
+                android:textOn="@string/nulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ToggleButton
+                    android:id="@+id/toggle_D7_S_DP"
+                    style="@drawable/android_toggle_onoff"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/android_toggle_onoff_bg"
+                    android:onClick="sD7"
+                    android:text="@string/nulo"
+                    android:textOff="@string/nulo"
+                    android:textOn="@string/nulo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+       
+
+    </LinearLayout>
+
+</ScrollView>
+        
+    
